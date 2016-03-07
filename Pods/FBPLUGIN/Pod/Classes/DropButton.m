@@ -190,12 +190,17 @@ static DropButton * shareButton = nil;
         tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, btn.size.width, 0)];
         tableView.showsHorizontalScrollIndicator = NO;
         tableView.showsVerticalScrollIndicator = NO;
+        tableView.separatorColor = [UIColor clearColor];
         tableView.delegate = self;
         tableView.dataSource = self;
         
         if([_template responseForKey:@"background"] && ((NSString*)_template[@"background"]).length != 0)
         {
             tableView.backgroundColor = [AVHexColor colorWithHexString:_template[@"background"]];
+        }
+        else
+        {
+            tableView.backgroundColor = [UIColor clearColor];
         }
         
         float heightTemp = data.count < 5 ? data.count * cellHeight : *height;

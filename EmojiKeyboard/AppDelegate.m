@@ -10,7 +10,7 @@
 
 #import "EK_First_ViewController.h"
 
-#import "BinhLuanTinTucViewController.h"
+#import "EK_Keyboard_ViewController.h"
 
 #import <StartApp/StartApp.h>
 
@@ -37,9 +37,10 @@
         
     [[LTRequest sharedInstance] initRequest];
     
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[BinhLuanTinTucViewController new]];
+    self.window.rootViewController = [EK_First_ViewController new];//[[UINavigationController alloc] initWithRootViewController:[EK_First_ViewController new]];
     
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,5 +17,96 @@
             </tableViewCellContentView>
             <point key="canvasLocation" x="499" y="237"/>
         </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="saveCell" rowHeight="258" id="ka2-aK-l20">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="258"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ka2-aK-l20" id="xW8-Jf-XoZ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReW-Op-Jjm">
+                        <rect key="frame" x="8" y="8" width="256" height="240"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.75598404259999996" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKt-Vq-9rf">
+                        <rect key="frame" x="16" y="17" width="240" height="224"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaB-2H-rbc" customClass="DropButton">
+                        <rect key="frame" x="275" y="213" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="09Q-fQ-tWy"/>
+                            <constraint firstAttribute="height" constant="35" id="UUG-ID-llh"/>
+                        </constraints>
+                        <state key="normal" image="setting"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="pListName" value="drop"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-k4-t5m">
+                        <rect key="frame" x="0.0" y="256" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.75598404259999996" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Pnk-B5-gmy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SaB-2H-rbc" secondAttribute="trailing" constant="10" id="0Hh-bO-TeD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xKt-Vq-9rf" secondAttribute="trailing" constant="56" id="0tV-wh-Pzt"/>
+                    <constraint firstItem="ReW-Op-Jjm" firstAttribute="leading" secondItem="xW8-Jf-XoZ" secondAttribute="leading" constant="8" id="25E-cU-GXv"/>
+                    <constraint firstAttribute="trailing" secondItem="ReW-Op-Jjm" secondAttribute="trailing" constant="56" id="28L-iT-KK1"/>
+                    <constraint firstAttribute="trailing" secondItem="4b0-k4-t5m" secondAttribute="trailing" id="43a-el-sX6"/>
+                    <constraint firstItem="xKt-Vq-9rf" firstAttribute="leading" secondItem="xW8-Jf-XoZ" secondAttribute="leadingMargin" constant="8" id="GqB-2c-qJd"/>
+                    <constraint firstAttribute="bottom" secondItem="SaB-2H-rbc" secondAttribute="bottom" constant="9" id="OXO-gf-EeY"/>
+                    <constraint firstItem="ReW-Op-Jjm" firstAttribute="top" secondItem="xW8-Jf-XoZ" secondAttribute="top" constant="8" id="b1M-c7-jHO"/>
+                    <constraint firstItem="xKt-Vq-9rf" firstAttribute="top" secondItem="xW8-Jf-XoZ" secondAttribute="topMargin" constant="9" id="c5P-nt-3OI"/>
+                    <constraint firstAttribute="bottom" secondItem="4b0-k4-t5m" secondAttribute="bottom" id="jyY-Y4-MFu"/>
+                    <constraint firstAttribute="bottom" secondItem="ReW-Op-Jjm" secondAttribute="bottom" constant="9" id="ksH-DH-qVa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xKt-Vq-9rf" secondAttribute="bottom" constant="8" id="n4j-xc-OWa"/>
+                    <constraint firstItem="4b0-k4-t5m" firstAttribute="leading" secondItem="xW8-Jf-XoZ" secondAttribute="leading" id="pKn-dp-fNx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="451" y="110"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="88" id="6oS-f2-5aY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6oS-f2-5aY" id="0hM-KM-IdN">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved list empty, be creative!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXx-ZG-xNi">
+                        <rect key="frame" x="8" y="33" width="304" height="21"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.75598404259999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pXx-ZG-xNi" secondAttribute="bottom" constant="33" id="GsO-hI-IiC"/>
+                    <constraint firstItem="pXx-ZG-xNi" firstAttribute="top" secondItem="0hM-KM-IdN" secondAttribute="top" constant="33" id="MBO-ef-Ebq"/>
+                    <constraint firstItem="pXx-ZG-xNi" firstAttribute="leading" secondItem="0hM-KM-IdN" secondAttribute="leading" constant="8" id="Pf6-JE-Wxy"/>
+                    <constraint firstAttribute="trailing" secondItem="pXx-ZG-xNi" secondAttribute="trailing" constant="8" id="krM-h9-Byc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="400" y="356"/>
+        </tableViewCell>
     </objects>
+    <resources>
+        <image name="setting" width="132" height="132"/>
+    </resources>
 </document>

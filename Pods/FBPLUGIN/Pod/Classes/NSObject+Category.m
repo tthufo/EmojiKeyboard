@@ -753,16 +753,39 @@ CLLocationManager * locationManager;
     
     CGFloat width = [UIScreen mainScreen].bounds.size.width - distance;
     
-    CGRect titleBounds = [@"name" boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL];
-    CGRect bodyBounds = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL];
+//    CGRect titleBounds = [@"name" boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL];
+//    CGRect bodyBounds = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL];
+    
+    CGSize titleBounds = SYSTEM_VERSION_LESS_THAN(@"7") ? [@"name" sizeWithFont:[UIFont systemFontOfSize:fontSize]
+    constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
+           lineBreakMode:NSLineBreakByWordWrapping] : [@"name" boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL].size;
+    CGSize bodyBounds = SYSTEM_VERSION_LESS_THAN(@"7") ? [self sizeWithFont:[UIFont systemFontOfSize:fontSize]
+                                                             constrainedToSize:CGSizeMake(width, CGFLOAT_MAX)
+                                                                 lineBreakMode:NSLineBreakByWordWrapping] : [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:NULL].size;
+    
+//    if (SYSTEM_VERSION_LESS_THAN(iOS7_0))
+//    {
+//        return [aLabelTextString sizeWithFont:aLabelFont
+//                            constrainedToSize:CGSizeMake(aLabelSizeWidth, MAXFLOAT)
+//                                lineBreakMode:NSLineBreakByWordWrapping];
+//    }
+//    else if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(iOS7_0))
+//    {
+//        return [aLabelTextString boundingRectWithSize:CGSizeMake(aLabelSizeWidth, MAXFLOAT)
+//                                              options:NSStringDrawingUsesLineFragmentOrigin
+//                                           attributes:@{
+//                                                        NSFontAttributeName : aLabelFont
+//                                                        }
+//                                              context:nil].size;
+//    }
     
     if (self.length == 0)
     {
         return 0.0;
     }
     
-    CGFloat height = CGRectGetHeight(titleBounds);
-    height += CGRectGetHeight(bodyBounds);
+    CGFloat height = titleBounds.height;//CGRectGetHeight(titleBounds);
+    height += bodyBounds.height;//CGRectGetHeight(bodyBounds);
     height += extra;
     
     if (height < 50)

@@ -8,7 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B7E59DB2F33F9E63D72C9CE6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F8F32E83B1460BC0E967C2 /* libPods.a */; };
+		FC091AAF1C89968C009DE1EB /* 3.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AA71C89968C009DE1EB /* 3.plist */; };
+		FC091AB01C89968C009DE1EB /* 2.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AA81C89968C009DE1EB /* 2.plist */; };
+		FC091AB11C89968C009DE1EB /* 1.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AA91C89968C009DE1EB /* 1.plist */; };
+		FC091AB21C89968C009DE1EB /* 8.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AAA1C89968C009DE1EB /* 8.plist */; };
+		FC091AB31C89968C009DE1EB /* 4.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AAB1C89968C009DE1EB /* 4.plist */; };
+		FC091AB41C89968C009DE1EB /* 6.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AAC1C89968C009DE1EB /* 6.plist */; };
+		FC091AB51C89968C009DE1EB /* 5.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AAD1C89968C009DE1EB /* 5.plist */; };
+		FC091AB61C89968C009DE1EB /* 7.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC091AAE1C89968C009DE1EB /* 7.plist */; };
+		FC0BE0991C8C4C1C00CD0337 /* btSimplePopUP.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0BE0981C8C4C1C00CD0337 /* btSimplePopUP.m */; };
+		FC0BE09D1C8C703A00CD0337 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0BE09A1C8C703A00CD0337 /* Default-568h@2x.png */; };
+		FC0BE09E1C8C703A00CD0337 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0BE09B1C8C703A00CD0337 /* Default.png */; };
+		FC0BE09F1C8C703A00CD0337 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = FC0BE09C1C8C703A00CD0337 /* Default~iphone.png */; };
 		FC0D874B1C86F7A400F68677 /* EK_Cells.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0D874A1C86F7A400F68677 /* EK_Cells.xib */; };
+		FC0E989B1C882646002A7995 /* EM_Cells.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC0E989A1C882645002A7995 /* EM_Cells.xib */; };
+		FC1A3A821C8B4C040071A700 /* EK_Saved_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1A3A801C8B4C040071A700 /* EK_Saved_ViewController.m */; };
+		FC1A3A831C8B4C040071A700 /* EK_Saved_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1A3A811C8B4C040071A700 /* EK_Saved_ViewController.xib */; };
+		FC1A3A851C8C25F40071A700 /* EK_DropCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1A3A841C8C25F40071A700 /* EK_DropCell.xib */; };
+		FC1A3A871C8C261C0071A700 /* drop.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC1A3A861C8C261C0071A700 /* drop.plist */; };
 		FC629C121C86CC4700513013 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C111C86CC4700513013 /* main.m */; };
 		FC629C151C86CC4700513013 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C141C86CC4700513013 /* AppDelegate.m */; };
 		FC629C181C86CC4700513013 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C171C86CC4700513013 /* ViewController.m */; };
@@ -21,15 +38,34 @@
 		FC629C391C86D33000513013 /* EK_First_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C371C86D33000513013 /* EK_First_ViewController.m */; };
 		FC629C3A1C86D33000513013 /* EK_First_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC629C381C86D33000513013 /* EK_First_ViewController.xib */; };
 		FC629C3C1C86DD7200513013 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC629C3B1C86DD7200513013 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		FC629C401C86EE6200513013 /* BinhLuanTinTucViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C3E1C86EE6200513013 /* BinhLuanTinTucViewController.m */; };
-		FC629C411C86EE6200513013 /* BinhLuanTinTucViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC629C3F1C86EE6200513013 /* BinhLuanTinTucViewController.xib */; };
+		FC629C401C86EE6200513013 /* EK_Keyboard_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC629C3E1C86EE6200513013 /* EK_Keyboard_ViewController.m */; };
+		FC629C411C86EE6200513013 /* EK_Keyboard_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC629C3F1C86EE6200513013 /* EK_Keyboard_ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		251C097692DBFE0EF695E521 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AB36EF219C7E98E52BFAE39 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E3F8F32E83B1460BC0E967C2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC091AA71C89968C009DE1EB /* 3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3.plist; sourceTree = "<group>"; };
+		FC091AA81C89968C009DE1EB /* 2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 2.plist; sourceTree = "<group>"; };
+		FC091AA91C89968C009DE1EB /* 1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 1.plist; sourceTree = "<group>"; };
+		FC091AAA1C89968C009DE1EB /* 8.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 8.plist; sourceTree = "<group>"; };
+		FC091AAB1C89968C009DE1EB /* 4.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 4.plist; sourceTree = "<group>"; };
+		FC091AAC1C89968C009DE1EB /* 6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 6.plist; sourceTree = "<group>"; };
+		FC091AAD1C89968C009DE1EB /* 5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 5.plist; sourceTree = "<group>"; };
+		FC091AAE1C89968C009DE1EB /* 7.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 7.plist; sourceTree = "<group>"; };
+		FC0BE0971C8C4C1C00CD0337 /* btSimplePopUP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = btSimplePopUP.h; sourceTree = "<group>"; };
+		FC0BE0981C8C4C1C00CD0337 /* btSimplePopUP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = btSimplePopUP.m; sourceTree = "<group>"; };
+		FC0BE09A1C8C703A00CD0337 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FC0BE09B1C8C703A00CD0337 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FC0BE09C1C8C703A00CD0337 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
 		FC0D874A1C86F7A400F68677 /* EK_Cells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EK_Cells.xib; sourceTree = "<group>"; };
+		FC0E989A1C882645002A7995 /* EM_Cells.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EM_Cells.xib; sourceTree = "<group>"; };
+		FC1A3A7F1C8B4C040071A700 /* EK_Saved_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EK_Saved_ViewController.h; sourceTree = "<group>"; };
+		FC1A3A801C8B4C040071A700 /* EK_Saved_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EK_Saved_ViewController.m; sourceTree = "<group>"; };
+		FC1A3A811C8B4C040071A700 /* EK_Saved_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EK_Saved_ViewController.xib; sourceTree = "<group>"; };
+		FC1A3A841C8C25F40071A700 /* EK_DropCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EK_DropCell.xib; sourceTree = "<group>"; };
+		FC1A3A861C8C261C0071A700 /* drop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = drop.plist; sourceTree = "<group>"; };
 		FC629C0D1C86CC4700513013 /* EmojiKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC629C111C86CC4700513013 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC629C131C86CC4700513013 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,9 +85,9 @@
 		FC629C371C86D33000513013 /* EK_First_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EK_First_ViewController.m; sourceTree = "<group>"; };
 		FC629C381C86D33000513013 /* EK_First_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EK_First_ViewController.xib; sourceTree = "<group>"; };
 		FC629C3B1C86DD7200513013 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FC629C3D1C86EE6200513013 /* BinhLuanTinTucViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinhLuanTinTucViewController.h; sourceTree = "<group>"; };
-		FC629C3E1C86EE6200513013 /* BinhLuanTinTucViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinhLuanTinTucViewController.m; sourceTree = "<group>"; };
-		FC629C3F1C86EE6200513013 /* BinhLuanTinTucViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BinhLuanTinTucViewController.xib; sourceTree = "<group>"; };
+		FC629C3D1C86EE6200513013 /* EK_Keyboard_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EK_Keyboard_ViewController.h; sourceTree = "<group>"; };
+		FC629C3E1C86EE6200513013 /* EK_Keyboard_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EK_Keyboard_ViewController.m; sourceTree = "<group>"; };
+		FC629C3F1C86EE6200513013 /* EK_Keyboard_ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EK_Keyboard_ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +157,9 @@
 		FC629C101C86CC4700513013 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BE09A1C8C703A00CD0337 /* Default-568h@2x.png */,
+				FC0BE09B1C8C703A00CD0337 /* Default.png */,
+				FC0BE09C1C8C703A00CD0337 /* Default~iphone.png */,
 				FC629C111C86CC4700513013 /* main.m */,
 				FC629C2D1C86D25500513013 /* PrefixHeader.pch */,
 			);
@@ -154,6 +193,8 @@
 		FC629C291C86CC6900513013 /* Additionals */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BE0971C8C4C1C00CD0337 /* btSimplePopUP.h */,
+				FC0BE0981C8C4C1C00CD0337 /* btSimplePopUP.m */,
 			);
 			name = Additionals;
 			sourceTree = "<group>";
@@ -161,13 +202,27 @@
 		FC629C351C86D31300513013 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC0E989A1C882645002A7995 /* EM_Cells.xib */,
 				FC629C361C86D33000513013 /* EK_First_ViewController.h */,
 				FC629C371C86D33000513013 /* EK_First_ViewController.m */,
 				FC629C381C86D33000513013 /* EK_First_ViewController.xib */,
-				FC629C3D1C86EE6200513013 /* BinhLuanTinTucViewController.h */,
-				FC629C3E1C86EE6200513013 /* BinhLuanTinTucViewController.m */,
-				FC629C3F1C86EE6200513013 /* BinhLuanTinTucViewController.xib */,
+				FC629C3D1C86EE6200513013 /* EK_Keyboard_ViewController.h */,
+				FC629C3E1C86EE6200513013 /* EK_Keyboard_ViewController.m */,
+				FC629C3F1C86EE6200513013 /* EK_Keyboard_ViewController.xib */,
 				FC0D874A1C86F7A400F68677 /* EK_Cells.xib */,
+				FC091AA91C89968C009DE1EB /* 1.plist */,
+				FC091AA81C89968C009DE1EB /* 2.plist */,
+				FC091AA71C89968C009DE1EB /* 3.plist */,
+				FC091AAB1C89968C009DE1EB /* 4.plist */,
+				FC091AAA1C89968C009DE1EB /* 8.plist */,
+				FC091AAC1C89968C009DE1EB /* 6.plist */,
+				FC091AAE1C89968C009DE1EB /* 7.plist */,
+				FC091AAD1C89968C009DE1EB /* 5.plist */,
+				FC1A3A7F1C8B4C040071A700 /* EK_Saved_ViewController.h */,
+				FC1A3A801C8B4C040071A700 /* EK_Saved_ViewController.m */,
+				FC1A3A811C8B4C040071A700 /* EK_Saved_ViewController.xib */,
+				FC1A3A841C8C25F40071A700 /* EK_DropCell.xib */,
+				FC1A3A861C8C261C0071A700 /* drop.plist */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -232,9 +287,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC091AB01C89968C009DE1EB /* 2.plist in Resources */,
 				FC629C201C86CC4700513013 /* LaunchScreen.storyboard in Resources */,
+				FC1A3A851C8C25F40071A700 /* EK_DropCell.xib in Resources */,
+				FC091AB11C89968C009DE1EB /* 1.plist in Resources */,
+				FC0BE09E1C8C703A00CD0337 /* Default.png in Resources */,
+				FC091AAF1C89968C009DE1EB /* 3.plist in Resources */,
+				FC091AB61C89968C009DE1EB /* 7.plist in Resources */,
+				FC0E989B1C882646002A7995 /* EM_Cells.xib in Resources */,
+				FC091AB31C89968C009DE1EB /* 4.plist in Resources */,
+				FC1A3A831C8B4C040071A700 /* EK_Saved_ViewController.xib in Resources */,
 				FC629C1D1C86CC4700513013 /* Assets.xcassets in Resources */,
-				FC629C411C86EE6200513013 /* BinhLuanTinTucViewController.xib in Resources */,
+				FC091AB41C89968C009DE1EB /* 6.plist in Resources */,
+				FC091AB51C89968C009DE1EB /* 5.plist in Resources */,
+				FC0BE09F1C8C703A00CD0337 /* Default~iphone.png in Resources */,
+				FC091AB21C89968C009DE1EB /* 8.plist in Resources */,
+				FC0BE09D1C8C703A00CD0337 /* Default-568h@2x.png in Resources */,
+				FC629C411C86EE6200513013 /* EK_Keyboard_ViewController.xib in Resources */,
+				FC1A3A871C8C261C0071A700 /* drop.plist in Resources */,
 				FC629C331C86D2B800513013 /* StartApp.bundle in Resources */,
 				FC629C3A1C86D33000513013 /* EK_First_ViewController.xib in Resources */,
 				FC629C1B1C86CC4700513013 /* Main.storyboard in Resources */,
@@ -297,11 +367,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC629C401C86EE6200513013 /* BinhLuanTinTucViewController.m in Sources */,
+				FC629C401C86EE6200513013 /* EK_Keyboard_ViewController.m in Sources */,
 				FC629C321C86D2B800513013 /* Ads.m in Sources */,
 				FC629C391C86D33000513013 /* EK_First_ViewController.m in Sources */,
+				FC1A3A821C8B4C040071A700 /* EK_Saved_ViewController.m in Sources */,
 				FC629C181C86CC4700513013 /* ViewController.m in Sources */,
 				FC629C151C86CC4700513013 /* AppDelegate.m in Sources */,
+				FC0BE0991C8C4C1C00CD0337 /* btSimplePopUP.m in Sources */,
 				FC629C121C86CC4700513013 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,13 +491,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Thanh Hai Tran (N3994DUH8M)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Thanh Hai Tran (N3994DUH8M)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EmojiKeyboard",
 				);
 				GCC_PREFIX_HEADER = EmojiKeyboard/PrefixHeader.pch;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.vmgmedia.emokeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,13 +512,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Thanh Hai Tran (2A57FFFJMN)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EmojiKeyboard",
 				);
 				GCC_PREFIX_HEADER = EmojiKeyboard/PrefixHeader.pch;
 				INFOPLIST_FILE = EmojiKeyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vn.vmgmedia.emokeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";

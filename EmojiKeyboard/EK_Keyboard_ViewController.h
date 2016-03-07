@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 
-@interface BinhLuanTinTucViewController : UIViewController
+@interface EK_Keyboard_ViewController : UIViewController
 
 @end

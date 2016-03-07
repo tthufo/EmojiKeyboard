@@ -91,7 +91,7 @@
     NSFetchRequest *fr = [[NSFetchRequest alloc] init];
     [fr setEntity:ed];
     
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"key" ascending:YES];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"key" ascending:NO];
     
     [fr setSortDescriptors:[NSArray arrayWithObject:sortDescriptor]];
     

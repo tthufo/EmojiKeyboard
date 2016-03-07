@@ -6,11 +6,11 @@
 //  Copyright © 2015 Hanh. All rights reserved.
 //
 
-#import "BinhLuanTinTucViewController.h"
+#import "EK_Keyboard_ViewController.h"
 #import "DAKeyboardControl.h"
 #import "HPGrowingTextView.h"
 
-@interface BinhLuanTinTucViewController ()<HPGrowingTextViewDelegate, UIAlertViewDelegate>
+@interface EK_Keyboard_ViewController ()<HPGrowingTextViewDelegate, UIAlertViewDelegate>
 {
     IBOutlet UITableView * tableView;
     NSMutableArray * dataList;
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation BinhLuanTinTucViewController
+@implementation EK_Keyboard_ViewController
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -64,13 +64,13 @@
     
     textView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
     textView.minNumberOfLines = 1;
-    textView.maxNumberOfLines = 3;
+    textView.maxNumberOfLines = 5;
     textView.returnKeyType = UIReturnKeyGo;
     textView.delegate = self;
     textView.internalTextView.autocorrectionType = UITextAutocorrectionTypeNo;
     textView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(5, 0, 5, 0);
     textView.backgroundColor = [UIColor whiteColor];
-    textView.placeholder = @"Bình luận";
+    textView.placeholder = @"";
     [textView withBorder:@{@"Bcorner":@(6)}];
     [toolBar addSubview:textView];
     
@@ -123,19 +123,19 @@
 
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 35;
-}
-
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    return nil;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return 35;
+//}
+//
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    return nil;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 {
-    return dataList.count == 0 ? 1 : dataList.count;
+    return dataList.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -164,26 +164,6 @@
     
     return cell;
 }
-
-//-(void)viewWillAppear:(BOOL)animated
-//{
-//    [super viewWillAppear:animated];
-//}
-//
-//-(void)viewWillDisappear:(BOOL)animated
-//{
-//    [super viewWillDisappear:animated];
-//}
-//
-//- (void)keyboardWasShown:(NSNotification *)notification
-//{
-//
-//}
-//
-//- (void)keyboardWillBeHidden:(NSNotification *)notification
-//{
-//
-//}
 
 #pragma mark -
 
